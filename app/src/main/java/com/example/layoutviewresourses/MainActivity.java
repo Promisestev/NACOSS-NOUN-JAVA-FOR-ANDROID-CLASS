@@ -24,11 +24,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         OutPut = (TextView)findViewById(R.id.textView2);
         First_Button = (Button)findViewById(R.id.button);
 
+        First_Button.setOnClickListener(this);
+
     }
 
     @Override
     public void onClick(View view) {
-        OutPut.setText("You are welcome to Nacoss Noun Java Class");
+            OutPut.setText("You are welcome to Nacoss Noun Java Class");
     }
 
     public void displayText(View view) {
